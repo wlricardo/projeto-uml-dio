@@ -1,4 +1,30 @@
 public class iPhone implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical {
+
+    private String modelo;
+    private String imei;
+
+    public iPhone(String modelo, String imei) {
+        this.modelo = modelo;
+        this.imei = imei;
+    }
+
+    // Getters e Setters
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getImei() {
+        return imei;
+    }
+
+    public void setImei(String imei) {
+        this.imei = imei;
+    }
+
     // Métodos do Reprodutor Musical
     @Override
     public void tocar() {

@@ -1,9 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        iPhone iPhone15 = new iPhone();
+        iPhone iPhone15 = new iPhone("15 Pro Max", "352739208008976");
+
+        // Dados do iPhone
+        System.out.println("\n--------------------------");
+        System.out.println("[ Dados do iPhone ]");
+        System.out.println("Modelo: " + iPhone15.getModelo());
+        System.out.println("IMEI: " + iPhone15.getImei());
+
+        System.out.println("--------------------------\n");
 
         // Reprodutor Musical
-        System.out.println("\n[ Reprodutor Musical ]");
+        System.out.println("[ Reprodutor Musical ]");
         iPhone15.tocar();
         iPhone15.pausar();
         iPhone15.selecionarMusica("Enjoy the silence");
